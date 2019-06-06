@@ -647,7 +647,7 @@ class Imexamine:
                     plt.pause(0.001)
                 else:
                     fig.canvas.draw()
-            return x, y, total_flux  # give back precise Point center
+            return x, y, mag, total_flux  # give back precise Point center
 
     def line_fit(self, x, y, data=None, form=None, genplot=True, fig=None, col=False):
         """compute the 1D fit to the line of data using the specified form.
